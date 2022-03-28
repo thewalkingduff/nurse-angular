@@ -1,8 +1,8 @@
-<h2>Course Details</h2>
+<h2 class="dark-green-text">Course Details</h2>
 
 <div *ngIf="course">
-    <h3>{{course.name}}</h3>
-    <h4>{{ course.price | currency }}</h4>
+    <h3 class="dark-green-text">{{course.name}}</h3>
+    <h4 class="dark-green-text">{{ course.price | currency }}</h4>
     <p>{{ course.description }}</p>
     <button type="button" (click)="addToCart(course)">Buy</button>
     <app-course-alerts
