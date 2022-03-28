@@ -1,4 +1,8 @@
-<h2>Courses</h2>
+<div id="heading">
+  <h1>Continuing Education for Nurses</h1>
+  <h2>Fulfill State Requirements for License Renewal and Enhance Your Practice</h2>
+</div>
+
 
 
 <!-- 
@@ -9,7 +13,9 @@ can be found in the LICENSE file at https://angular.io/license
 
 <div *ngFor="let course of courses">
   <h3>
-    <a [title]="course.name + ' details'">
+    <a
+     [title]="course.name + ' details'"
+     [routerLink]="['/courses', course.id]">
     {{course.name}}
     </a>
   </h3>
@@ -21,5 +27,10 @@ can be found in the LICENSE file at https://angular.io/license
   <button (click)="share()">
     Share
   </button>
+
+  <app-course-alerts
+    [course]="course"
+    (notify)="onNotify()">
+  </app-course-alerts>
 
 </div>

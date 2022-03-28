@@ -6,6 +6,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CourseListComponent } from './course-list/course-list.component';
+import { CourseAlertsComponent } from './course-alerts/course-alerts.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
@@ -13,12 +16,18 @@ import { CourseListComponent } from './course-list/course-list.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: CourseListComponent },
+      { path: 'courses/:courseId', component:
+    CourseDetailsComponent },
+      {path: 'cart', component: CartComponent}
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    CourseListComponent
+    CourseListComponent,
+    CourseAlertsComponent,
+    CourseDetailsComponent,
+    CartComponent
   ],
   bootstrap: [
     AppComponent

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { courses } from '../courses';
 
 @Component({
-  selector: 'app-product-list',
+  selector: 'app-course-list',
   templateUrl: './course-list.component.html',
   styleUrls: ['./course-list.component.scss']
 })
@@ -12,6 +12,10 @@ export class CourseListComponent {
 
   share() {
     window.alert('The product has been shared!');
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the course goes on sale!')
   }
 }
 

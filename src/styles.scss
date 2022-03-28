@@ -33,6 +33,7 @@ h2 {
 
 h1, h2 {
   font-weight: lighter;
+  color: #1C4A78;
 }
 
 p {
@@ -43,7 +44,7 @@ p {
 
 a {
   cursor: pointer;
-  color: #fcfcfc;
+  color: #1C4A78;
   text-decoration: none;
 }
 
@@ -67,6 +68,10 @@ label {
   margin-bottom: 4px;
   display: block;
   text-transform: uppercase;
+}
+
+#heading {
+  padding: 1rem 0;
 }
 
 /* Button */
@@ -96,11 +101,11 @@ label {
 
 .fancy-button {
   background-color: white;
-  color: #1976d2;
+  color: #1C4A78;
 }
 
 .fancy-button i.material-icons {
-  color: #1976d2;
+  color: #1C4A78;
   padding-right: 4px;
 }
 
@@ -109,7 +114,7 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: green;
+  background: linear-gradient(180deg,#4eb1c5 0%,#4182c4 100%)!important;
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -135,6 +140,10 @@ app-top-bar h1 {
   margin-bottom: 8px;
   border-radius: 2px;
   background-color: #EEEEEE;
+}
+
+button {
+  background: #4182C4;
 }
 
 
