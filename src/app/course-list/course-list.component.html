@@ -1,6 +1,6 @@
-<div id="heading">
-  <h1 class="blue-text">Continuing Education for Nurses</h1>
-  <h2 class="blue-text">Fulfill State Requirements for License Renewal and Enhance Your Practice</h2>
+<div id="heading-div">
+  <h1 class="dark-green-text">Continuing Education for Nurses</h1>
+  <h4 class="dark-green-text">Fulfill State Requirements for License Renewal and Enhance Your Practice</h4>
 </div>
 
 
@@ -10,27 +10,36 @@ Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 -->
+<section class="main-container">
+  <div *ngFor="let course of courses" class="course-div">
+    <h3>
+      <a
+       [title]="course.name + ' details'"
+       [routerLink]="['/courses', course.id]">
+      {{course.name}}
+      </a>
+    </h3>
+  
+    <p *ngIf="course.description">
+      Description: {{ course.description}}
+    </p>
+  
+    <button (click)="share()" class="home-buttons">
+      Share
+    </button>
 
-<div *ngFor="let course of courses">
-  <h3>
-    <a
-     [title]="course.name + ' details'"
-     [routerLink]="['/courses', course.id]">
-    {{course.name}}
-    </a>
-  </h3>
-
-  <p *ngIf="course.description">
-    Description: {{ course.description}}
-  </p>
-
-  <button (click)="share()">
-    Share
-  </button>
-
-  <app-course-alerts
-    [course]="course"
-    (notify)="onNotify()">
-  </app-course-alerts>
-
-</div>
+    <button class="home-buttons">
+      <a
+      [title]="course.name + ' details'"
+      [routerLink]="['/courses', course.id]">
+     Course Info
+     </a>
+    </button>
+  
+    <app-course-alerts
+      [course]="course"
+      (notify)="onNotify()">
+    </app-course-alerts>
+  
+  </div>
+</section>
