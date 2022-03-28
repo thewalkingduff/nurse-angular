@@ -35,7 +35,6 @@ h2 {
 
 h1, h2 {
   font-weight: lighter;
-
 }
 
 p {
@@ -74,6 +73,10 @@ label {
   text-transform: uppercase;
 }
 
+form {
+  margin: 2rem 0;
+}
+
 #heading-div {
   padding-top: 1rem;
   text-align: center;
@@ -83,6 +86,10 @@ label {
 
 #cart-heading {
   font-size: 1.5rem;
+}
+
+#header-state-requirements {
+  margin-top: .5rem;
 }
 
 /* Button */
@@ -121,7 +128,7 @@ button a {
 
 .fancy-button {
   background-color: white;
-  color: #1C4A78;
+  color: #1C5063;
 }
 
 .fancy-button i.material-icons {

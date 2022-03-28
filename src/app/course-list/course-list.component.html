@@ -1,6 +1,6 @@
 <div id="heading-div">
   <h1 class="dark-green-text">Continuing Education for Nurses</h1>
-  <h4 class="dark-green-text">Fulfill State Requirements for License Renewal and Enhance Your Practice</h4>
+  <h4 class="dark-green-text" id="header-state-requirements">Fulfill State Requirements for License Renewal and Enhance Your Practice</h4>
 </div>
 
 
@@ -12,8 +12,9 @@ can be found in the LICENSE file at https://angular.io/license
 -->
 <section class="main-container">
   <div *ngFor="let course of courses" class="course-div">
-    <h3>
+    <h3 >
       <a
+       class="dark-green-text"
        [title]="course.name + ' details'"
        [routerLink]="['/courses', course.id]">
       {{course.name}}
@@ -36,10 +37,10 @@ can be found in the LICENSE file at https://angular.io/license
      </a>
     </button>
   
-    <app-course-alerts
+    <!-- <app-course-alerts
       [course]="course"
       (notify)="onNotify()">
-    </app-course-alerts>
+    </app-course-alerts> -->
   
   </div>
 </section>

@@ -5,4 +5,8 @@
     <h4>{{ course.price | currency }}</h4>
     <p>{{ course.description }}</p>
     <button type="button" (click)="addToCart(course)">Buy</button>
+    <app-course-alerts
+    [course]="course"
+    (notify)="onNotify()">
+  </app-course-alerts>
 </div>

@@ -14,9 +14,6 @@ export class CourseListComponent {
     window.alert('The product has been shared!');
   }
 
-  onNotify() {
-    window.alert('You will be notified when the course goes on sale!')
-  }
 }
 
 

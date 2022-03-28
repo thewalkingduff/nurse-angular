@@ -31,4 +31,8 @@ export class CourseDetailsComponent implements OnInit {
       courseIdFromRoute);
   }
 
+  onNotify() {
+    window.alert('You will be notified when the course goes on sale!')
+  }
+
 }
