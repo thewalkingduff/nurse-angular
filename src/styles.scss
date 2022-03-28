@@ -95,6 +95,7 @@ form {
 #nurse-logo {
   height: 110px;
   width: 110x;
+
 }
 
 /* Button */
@@ -148,7 +149,7 @@ app-top-bar {
   height: 68px;
   // background: linear-gradient(180deg,#4eb1c5 0%,#4182c4 100%)!important;
   background: linear-gradient(135deg,#4393af 0%,#3ca8a3 52%,#237c9d 100%);
-  padding: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
