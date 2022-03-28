@@ -190,6 +190,12 @@ app-top-bar h1 {
   margin: 0 1rem;
 }
 
+@media (max-width: 480px) {
+  .main-container {
+    display: block;
+  }
+}
+
 
 
 /*
