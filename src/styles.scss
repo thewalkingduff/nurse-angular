@@ -33,7 +33,7 @@ h2 {
 
 h1, h2 {
   font-weight: lighter;
-  color: #1C4A78;
+
 }
 
 p {
@@ -72,6 +72,10 @@ label {
 
 #heading {
   padding: 1rem 0;
+}
+
+#cart-heading {
+  font-size: 1.5rem;
 }
 
 /* Button */
@@ -142,6 +146,10 @@ app-top-bar h1 {
   background-color: #EEEEEE;
 }
 
+.blue-text {
+  color: #1C4A78;
+  font-weight: 900;
+}
 button {
   background: #4182C4;
 }
